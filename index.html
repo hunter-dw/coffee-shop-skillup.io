@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icon_title_site.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>CoffeeShop</title>
+</head>
+<body>
+    <header id="hero">
+        <video id="hero-video-bg" loop muted playsinline>
+            <source id="video-source" src="videos/makecoffee_main.mp4" type="video/mp4">
+        </video>
+        <nav class="navigation">
+            <ul id="ul1">
+                <li><a href="#hero" class="home">Home</a></li>
+                <li><a href="#about" class="about">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#menu" class="menu">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="#menu">Hot coffee</a></li>
+                        <li><a href="#menu">Cold drinks</a></li>
+                        <li><a href="#menu">Desserts</a></li>
+                        <li><a href="#menu">Breakfast</a></li>
+                    </ul>
+                </li>
+                <li><a href="#reservation" class="reservation">Reservation</a></li>
+            </ul>
+            <a href="#hero" class="logo-link"><img class="logo" src="images/logo.svg" alt="CoffeeShop"></a>
+            <ul id="ul2">
+                <li class="has-dropdown">
+                    <a href="#about" class="pages">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="#news">Blog</a></li>
+                        <li><a href="#about">Our history</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li><a href="#reservation">Booking</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#shop" class="shop">Shop</a>
+                    <ul class="dropdown">
+                        <li><a href="#shop">Coffee beans</a></li>
+                        <li><a href="#cta">Coffee machines</a></li>
+                        <li><a href="#shop">Accessories</a></li>
+                        <li><a href="#shop">Gift sets</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer" class="contact">Contact</a></li>
+                <li class="icon-item">
+                    <button class="icon-btn search-btn" aria-label="Search">
+                        <svg class="search" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="icon-item">
+                    <button class="icon-btn basket-btn" aria-label="Cart">
+                        <svg class="basket" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.75 7.5H26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-overlay">
+            <input type="search" placeholder="Search coffee, menu, news..." class="search-input">
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="text reveal">
+                    <h1>Enjoy Your<br>Morning Coffee.</h1>
+                    <p>The coffee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity</p>
+                    <button class="btn-primary" data-scroll="#shop">Test Coffee</button>
+                </div>
+                <div class="play reveal">
+                    <button class="play-toggle" aria-label="Play video">
+                        <svg class="stopButton" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="34.25" stroke="white" stroke-width="1.5"/>
+                            <path d="M28 26L42 35L28 44V26Z" fill="white"/>
+                        </svg>
+                        <svg class="playButton" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="34.25" stroke="white" stroke-width="1.5"/>
+                            <path d="M28 26H32V44H28V26Z" fill="white"/>
+                            <path d="M38 26H42V44H38V26Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <p>PLAY VIDEO</p>
+                    <video id="hero-video" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000; object-fit: cover;" src="videos/makecoffee_main.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="product">
+        <div class="container">
+            <div class="main2">
+                <div class="process">
+                    <div class="process-item reveal">
+                        <li class="li1">Best Coffee Flavour</li>
+                        <img src="images/pexels-chevanon-photography-312418.jpg" alt="Best coffee flavour">
+                    </div>
+                    <div class="process-item reveal">
+                        <li class="li2">Place to get lost</li>
+                        <img src="images/pexels-chevanon-photography-302896.jpg" alt="Place to get lost">
+                    </div>
+                    <div class="process-item reveal">
+                        <li class="li3">Proper roasting</li>
+                        <img src="images/pexels-chevanon-photography-324028.jpg" alt="Proper roasting">
+                    </div>
+                </div>
+
+                <div class="history" id="about">
+                    <div class="img1 reveal">
+                        <img src="images/pexels-chevanon-photography-302896.jpg" alt="Coffee story">
+                        <img src="images/pexels-chevanon-photography-312418.jpg" alt="Coffee cup">
+                    </div>
+                    <div class="img2 reveal">
+                        <img src="images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" alt="Coffee and plants">
+                    </div>
+                    <div class="text reveal">
+                        <p class="accent">Our history</p>
+                        <h2>Create a<br>new story with us</h2>
+                        <p id="description">mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                    </div>
+                </div>
+
+                <div class="popular_product" id="shop">
+                    <div class="text reveal">
+                        <p class="accent">Popular Product</p>
+                        <h2>Coffee popular Product</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="product-card reveal">
+                            <div class="coffee"><img src="images/17_Jan_02.jpg" alt="Brazil coffee"></div>
+                            <p class="coffee_rate">coffee
+                                <svg width="114" height="18" viewBox="0 0 114 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M104.333 1L106.908 6.21667L112.667 7.05833L108.5 11.1167L109.483 16.85L104.333 14.1417L99.1833 16.85L100.167 11.1167L96 7.05833L101.758 6.21667L104.333 1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                    <path d="M81.6667 1.00031L84.2417 6.21697L90 7.05864L85.8333 11.117L86.8167 16.8503L81.6667 14.142L76.5167 16.8503L77.5 11.117L73.3333 7.05864L79.0917 6.21697L81.6667 1.00031Z" fill="#C99E71"/>
+                                    <path d="M56.3333 1.00031L58.9083 6.21697L64.6667 7.05864L60.5 11.117L61.4833 16.8503L56.3333 14.142L51.1833 16.8503L52.1667 11.117L48 7.05864L53.7583 6.21697L56.3333 1.00031Z" fill="#C99E71"/>
+                                    <path d="M32.3333 1L34.9083 6.21667L40.6667 7.05833L36.5 11.1167L37.4833 16.85L32.3333 14.1417L27.1833 16.85L28.1667 11.1167L24 7.05833L29.7583 6.21667L32.3333 1Z" fill="#C99E71"/>
+                                    <path d="M8.33333 1L10.9083 6.21667L16.6667 7.05833L12.5 11.1167L13.4833 16.85L8.33333 14.1417L3.18333 16.85L4.16667 11.1167L0 7.05833L5.75833 6.21667L8.33333 1Z" fill="#C99E71"/>
+                                </svg>
+                            </p>
+                            <p class="product-name">brazil coffee gred</p>
+                            <p class="price">Price - <span class="color">$320.00/</span> <span class="strikeout">$358</span></p>
+                            <button class="add-cart">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M3 6H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                </svg>
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="coffee"><img src="images/17_Jan_02.jpg" alt="Ethiopia coffee"></div>
+                            <p class="coffee_rate">coffee
+                                <svg width="114" height="18" viewBox="0 0 114 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M104.333 1L106.908 6.21667L112.667 7.05833L108.5 11.1167L109.483 16.85L104.333 14.1417L99.1833 16.85L100.167 11.1167L96 7.05833L101.758 6.21667L104.333 1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                    <path d="M81.6667 1.00031L84.2417 6.21697L90 7.05864L85.8333 11.117L86.8167 16.8503L81.6667 14.142L76.5167 16.8503L77.5 11.117L73.3333 7.05864L79.0917 6.21697L81.6667 1.00031Z" fill="#C99E71"/>
+                                    <path d="M56.3333 1.00031L58.9083 6.21697L64.6667 7.05864L60.5 11.117L61.4833 16.8503L56.3333 14.142L51.1833 16.8503L52.1667 11.117L48 7.05864L53.7583 6.21697L56.3333 1.00031Z" fill="#C99E71"/>
+                                    <path d="M32.3333 1L34.9083 6.21667L40.6667 7.05833L36.5 11.1167L37.4833 16.85L32.3333 14.1417L27.1833 16.85L28.1667 11.1167L24 7.05833L29.7583 6.21667L32.3333 1Z" fill="#C99E71"/>
+                                    <path d="M8.33333 1L10.9083 6.21667L16.6667 7.05833L12.5 11.1167L13.4833 16.85L8.33333 14.1417L3.18333 16.85L4.16667 11.1167L0 7.05833L5.75833 6.21667L8.33333 1Z" fill="#C99E71"/>
+                                </svg>
+                            </p>
+                            <p class="product-name">ethiopia coffee gred</p>
+                            <p class="price">Price - <span class="color">$289.00/</span> <span class="strikeout">$320</span></p>
+                            <button class="add-cart">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M3 6H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                </svg>
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="product-card reveal">
+                            <div class="coffee"><img src="images/17_Jan_02.jpg" alt="Colombia coffee"></div>
+                            <p class="coffee_rate">coffee
+                                <svg width="114" height="18" viewBox="0 0 114 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M104.333 1L106.908 6.21667L112.667 7.05833L108.5 11.1167L109.483 16.85L104.333 14.1417L99.1833 16.85L100.167 11.1167L96 7.05833L101.758 6.21667L104.333 1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                    <path d="M81.6667 1.00031L84.2417 6.21697L90 7.05864L85.8333 11.117L86.8167 16.8503L81.6667 14.142L76.5167 16.8503L77.5 11.117L73.3333 7.05864L79.0917 6.21697L81.6667 1.00031Z" fill="#C99E71"/>
+                                    <path d="M56.3333 1.00031L58.9083 6.21697L64.6667 7.05864L60.5 11.117L61.4833 16.8503L56.3333 14.142L51.1833 16.8503L52.1667 11.117L48 7.05864L53.7583 6.21697L56.3333 1.00031Z" fill="#C99E71"/>
+                                    <path d="M32.3333 1L34.9083 6.21667L40.6667 7.05833L36.5 11.1167L37.4833 16.85L32.3333 14.1417L27.1833 16.85L28.1667 11.1167L24 7.05833L29.7583 6.21667L32.3333 1Z" fill="#C99E71"/>
+                                    <path d="M8.33333 1L10.9083 6.21667L16.6667 7.05833L12.5 11.1167L13.4833 16.85L8.33333 14.1417L3.18333 16.85L4.16667 11.1167L0 7.05833L5.75833 6.21667L8.33333 1Z" fill="#C99E71"/>
+                                </svg>
+                            </p>
+                            <p class="product-name">colombia coffee gred</p>
+                            <p class="price">Price - <span class="color">$310.00/</span> <span class="strikeout">$345</span></p>
+                            <button class="add-cart">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M3 6H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                    <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                </svg>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn-primary view-all">VIEW ALL PRODUCT</button>
+                </div>
+
+                <div class="CTA" id="cta">
+                    <div class="wdcm reveal">
+                        <img src="images/WDCM-G15L-1-removebg-prewiew.png" alt="Coffee machine">
+                    </div>
+                    <div class="text reveal">
+                        <h2>Coffee <br>machine, buy for home</h2>
+                        <p>mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</p>
+                        <button class="btn-primary">DISCOVER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="frame3">
+        <div class="container">
+            <div class="menu" id="menu">
+                <div class="text reveal">
+                    <p class="accent">Menu</p>
+                    <h2>Coffee popular menu</h2>
+                </div>
+                <div class="cards">
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-valeriia-miller-3146167.jpg" alt="Americano"></div>
+                        <div class="item-info">
+                            <span class="item-name">Americano rosted gred</span>
+                            <span class="item-price">$12.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-valeriia-miller-2516643.jpg" alt="Cappuccino"></div>
+                        <div class="item-info">
+                            <span class="item-name">Cappuccino classic</span>
+                            <span class="item-price">$14.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-chevanon-photography-312418.jpg" alt="Latte"></div>
+                        <div class="item-info">
+                            <span class="item-name">Latte with art</span>
+                            <span class="item-price">$13.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-chevanon-photography-324028.jpg" alt="Espresso"></div>
+                        <div class="item-info">
+                            <span class="item-name">Espresso double</span>
+                            <span class="item-price">$10.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/backgrounds/hero-bg.jpg" alt="Mocha"></div>
+                        <div class="item-info">
+                            <span class="item-name">Mocha marshmallow</span>
+                            <span class="item-price">$15.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-chevanon-photography-302896.jpg" alt="Flat white"></div>
+                        <div class="item-info">
+                            <span class="item-name">Flat white</span>
+                            <span class="item-price">$13.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" alt="Raf"></div>
+                        <div class="item-info">
+                            <span class="item-name">Raf vanilla</span>
+                            <span class="item-price">$16.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-image"><img src="images/pexels-valeriia-miller-2516643.jpg" alt="Hot chocolate"></div>
+                        <div class="item-info">
+                            <span class="item-name">Hot chocolate</span>
+                            <span class="item-price">$11.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial" id="testimonial">
+                <p class="accent">Testimonial</p>
+                <h2>Says our customers</h2>
+                <div class="cards" id="testimonial-cards"></div>
+                <div class="testimonial-bottom">
+                    <div class="people">
+                        <p id="people-counter">2/6 People</p>
+                        <svg width="120" height="4" viewBox="0 0 120 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="120" height="4" rx="2" fill="white"/>
+                            <rect id="people-progress" width="40" height="4" rx="2" fill="#C99E71"/>
+                        </svg>
+                    </div>
+                    <div class="arrows">
+                        <button class="back" aria-label="Previous">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 12H5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                <path d="M12 19L5 12L12 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                            </svg>
+                        </button>
+                        <button class="next" aria-label="Next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 12L19 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                                <path d="M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_booking" id="reservation">
+                <div class="map reveal">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d71795.9626401679!2d37.65697319946545!3d55.782404811876184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1792668758026!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <form class="form reveal" id="booking-form">
+                    <p class="accent">Reservation</p>
+                    <h2>Booking a table</h2>
+                    <input class="person" type="text" placeholder="1 Person" required>
+                    <input class="date" type="date" required>
+                    <input class="time" type="time" required>
+                    <button class="btn-primary" type="submit">BOOK A TABLE</button>
+                </form>
+            </div>
+
+            <div class="news" id="news">
+                <p class="accent">Testimonial</p>
+                <h2>Our latest news</h2>
+                <div class="cards">
+                    <div class="news-card reveal">
+                        <img src="images/pexels-chevanon-photography-302896.jpg" alt="News 1">
+                        <div>
+                            <span class="by"><span style="color: #C99E71;">By:</span> rasaline</span><span class="date">23.01.2021</span>
+                        </div>
+                        <p>Ideal cocktails from barmen....</p>
+                        <a href="#news">Read More
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                <path d="M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-card reveal">
+                        <img src="images/pexels-valeriia-miller-2516643.jpg" alt="News 2">
+                        <div>
+                            <span class="by"><span style="color: #C99E71;">By:</span> rasaline</span><span class="date">23.01.2021</span>
+                        </div>
+                        <p>Best latte art in the city....</p>
+                        <a href="#news">Read More
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                <path d="M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-card reveal">
+                        <img src="images/pexels-chevanon-photography-312418.jpg" alt="News 3">
+                        <div>
+                            <span class="by"><span style="color: #C99E71;">By:</span> rasaline</span><span class="date">23.01.2021</span>
+                        </div>
+                        <p>Secrets of proper roasting....</p>
+                        <a href="#news">Read More
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                                <path d="M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#C99E71"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer-inner">
+            <a href="#hero" class="logo-link"><img class="logo" src="images/logo.svg" alt="CoffeeShop"></a>
+            <nav class="navigation_footer">
+                <a href="#hero">Home</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#shop">Shop</a>
+                <a href="#news">Blogs</a>
+            </nav>
+            <form class="inmail" id="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" aria-label="Subscribe">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.99994 12L18.9999 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                        <path d="M12 5L19 12L12 19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <p class="copyright">© 2026 CoffeeShop. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
